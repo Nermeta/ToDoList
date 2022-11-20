@@ -1,0 +1,14 @@
+<h1>My Goals</h1>
+
+<table>
+    <tr>
+        <th>Goal</th>
+    </tr>
+    {% for goal in object_list %}
+    <tr>
+        <td>{{goal.title}}</td>
+    </tr>
+    {% empty %}
+        <h3>No current Goals</h3>
+    {% endfor %}
+</table>
